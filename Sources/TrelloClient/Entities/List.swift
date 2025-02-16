@@ -6,7 +6,7 @@
 //
 
 /// A list or column of a board in trello
-struct List: Codable {
+public struct List: Codable {
     let id: String
     let name: String
     /// Position of the list in the board

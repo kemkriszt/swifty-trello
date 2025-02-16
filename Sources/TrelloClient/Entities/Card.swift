@@ -6,7 +6,7 @@
 //
 
 /// A card is like a ticket in trello representing a unit of work
-struct Card: Codable {
+public struct Card: Codable {
     let id: String
     let name: String
     let desc: String

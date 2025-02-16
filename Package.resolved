@@ -1,13 +1,13 @@
 {
-  "originHash" : "360c603bb6aab15c3f402348e3c27e53aebe12b6bb3897b3e820cb5f49b83929",
+  "originHash" : "7d2876ce3a42cece33569ff8ed2e251ee79b6ad58d3ad28bf7828c08b11ce3cf",
   "pins" : [
     {
       "identity" : "securestore",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kemkriszt/SecureStore",
       "state" : {
-        "revision" : "2561a56a38e849b541f7e9d674c3efea191d6b7a",
-        "version" : "1.0.0"
+        "revision" : "a6feb15d9a6bdf8bb9e3d0e450110418efe08b7d",
+        "version" : "1.0.1"
       }
     }
   ],

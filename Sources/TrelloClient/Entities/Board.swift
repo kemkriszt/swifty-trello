@@ -6,7 +6,7 @@
 //
 
 /// A board is the main groupping element in trello holding multiple cards in multiple lists (columns)
-struct Board: Codable {
+public struct Board: Codable {
     let id: String
     let name: String
 }

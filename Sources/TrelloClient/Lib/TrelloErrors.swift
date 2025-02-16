@@ -11,4 +11,5 @@ enum TrelloError: Error {
     case noPresentationContext
     case accessDenied
     case userCancelled
+    case generalError
 }

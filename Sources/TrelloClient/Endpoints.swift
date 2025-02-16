@@ -23,6 +23,8 @@ enum TrelloEndpoint {
     case actions(cardId: String)
     /// List all lists (columns) of  a board
     case lists(boardId: String)
+    /// Get data of user. Use `me` to get the curren't users data
+    case member(userId: String = "me")
     
     var url: URL {
         URL(string: Self.apiBase)!.appending(path: self.toString)
@@ -34,6 +36,7 @@ enum TrelloEndpoint {
         case .cards(let boardId): "/boards/\(boardId)/cards"
         case .lists(let boardId): "/boards/\(boardId)/lists"
         case .actions(let cardId): "/cards/\(cardId)/actions"
+        case .member(let userId): "/members/\(userId)"
         }
     }
 }
