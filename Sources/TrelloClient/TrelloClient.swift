@@ -12,7 +12,7 @@ import UIKit
 #endif
 
 /// A Trello API client
-public class TrelloClient {
+public final class TrelloClient: @unchecked Sendable {
     private let authenticator: Authenticator
 
     let members: MemberResource

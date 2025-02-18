@@ -15,7 +15,7 @@ class TrelloResource {
     internal let urlSession: URLSession
     internal let decoder: JSONDecoder
     
-    init(authenticate: @escaping AuthenticatorFunction,
+    init(authenticate: @escaping @Sendable AuthenticatorFunction,
                   urlSession: URLSession,
                   decoder: JSONDecoder) {
         self.authenticate = authenticate
