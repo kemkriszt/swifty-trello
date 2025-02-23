@@ -15,9 +15,9 @@ import UIKit
 public final class TrelloClient: @unchecked Sendable {
     private let authenticator: Authenticator
 
-    let members: MemberResource
-    let boards: BoardResource
-    let cards: CardResource
+    public let members: MemberResource
+    public let boards: BoardResource
+    public let cards: CardResource
     
     public init(apiKey: String,
                 accountKey: String,

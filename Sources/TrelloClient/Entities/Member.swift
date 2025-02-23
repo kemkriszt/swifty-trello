@@ -5,8 +5,8 @@
 //  Created by Krisztián Kemenes on 14.02.2025.
 //
 
-public struct Member: Codable {
-    let id: String
-    let fullName: String
-    let username: String
+public struct Member: Codable, Sendable {
+    public let id: String
+    public let fullName: String
+    public let username: String
 }

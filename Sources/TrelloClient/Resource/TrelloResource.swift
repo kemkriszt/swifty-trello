@@ -8,7 +8,7 @@
 import Foundation
 
 /// Base Resource implementing common functionality
-class TrelloResource {
+public class TrelloResource {
     typealias AuthenticatorFunction = (URL) async throws -> URLRequest?
     
     internal let authenticate: AuthenticatorFunction
@@ -24,7 +24,7 @@ class TrelloResource {
     }
     
     /// Make a request to the API
-    internal func makeRequest<T: Codable>(to endpoint: TrelloEndpoint) async throws -> T {
+    func makeRequest<T: Codable>(to endpoint: TrelloEndpoint) async throws -> T {
         guard let request = try await self.authenticate(endpoint.url)
         else { throw TrelloError.generalError }
         

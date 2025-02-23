@@ -6,16 +6,16 @@
 //
 
 /// An action that was performed on a card, such as a comment
-public struct ActionItem: Codable {
-    let data: ActionData
-    let type: ActionType?
-    let memberCreator: Member
+public struct ActionItem: Codable, Sendable {
+    public let data: ActionData
+    public let type: ActionType?
+    public let memberCreator: Member
 }
 
-public struct ActionData: Codable {
-    let text: String?
+public struct ActionData: Codable, Sendable {
+    public let text: String?
 }
 
-public enum ActionType: Codable {
+public enum ActionType: Codable, Sendable {
     case commentCard
 }
